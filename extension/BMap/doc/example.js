@@ -191,7 +191,27 @@
                 legend: {
                     orient: 'vertical',
                     x: 'left',
-                    data: ['Monitor-US.VIRGINIA','Monitor-IRELAND', 'Monitor-HONGKONG','Monitor-NETHERLANDS','Monitor-SINGAPORE','Monitor-US.CALIFORNIA','Service-Europe','Service-NorthAmerica','Service-Oceania','Service-SouthAmerica'],
+                    data: ['Monitor-US.VIRGINIA',
+                    'Monitor-IRELAND', 
+                    'Monitor-HONGKONG',
+                    'Monitor-NETHERLANDS',
+                    'Monitor-SINGAPORE',
+                    'Monitor-US.CALIFORNIA',
+                    'Monitor-US.VIRGINIA2',
+                    'Monitor-IRELAND2',
+                    'Monitor-NETHERLANDS2',
+                    'Monitor-US.CALIFORNIA2',
+                    'Monitor-HONGKONG2',
+                    'Monitor-US.VIRGINIA3',
+                    'Monitor-IRELAND3',
+                    'Monitor-CHINA',
+                    'Monitor-IRELAND4',
+                    'Monitor_US.WASHINGTON',
+                    'Monitor_US.ILLINOIS',
+                    'Service-Europe',
+                    'Service-NorthAmerica',
+                    'Service-Oceania',
+                    'Service-SouthAmerica'],
                     //data: ['Monitor-US.VIRGINIA', 'Monitor-IRELAND', 'Monitor-HONGKONG','Monitor-NETHERLANDS','Monitor-SINGAPORE','Monitor-US.CALIFORNIA','Monitor-US.VIRGINIA2','Service-Europe','Service-NorthAmerica','Service-Oceania','Service-SouthAmerica'],
                     selectedMode: 'single',
                     selected: {
@@ -201,6 +221,17 @@
                         'Monitor-NETHERLANDS': false,
                         'Monitor-SINGAPORE': false,
                         'Monitor-US.CALIFORNIA': false,
+                        'Monitor-US.VIRGINIA2': false,
+                        'Monitor-IRELAND2': false,
+                        'Monitor-NETHERLANDS2': false,
+                        'Monitor-US.CALIFORNIA2': false,
+                        'Monitor-HONGKONG2': false,
+                        'Monitor-US.VIRGINIA3': false,
+                        'Monitor-IRELAND3': false,
+                        'Monitor-CHINA': false,
+                        'Monitor-IRELAND4': false,
+                        'Monitor_US.WASHINGTON': false,
+                        'Monitor_US.ILLINOIS': false,
                         'Service-Europe':false,
                         'Service-NorthAmerica':false,
                         'Service-Oceania':false,
@@ -1165,7 +1196,468 @@
                             data:testData6_2
                         }
                     },
-
+                    {
+                        name: 'Monitor-US.VIRGINIA2',
+                        type: 'map',
+                        mapType: 'none',
+                        data: [],
+                        markLine: {
+                               smooth: true,
+                               effect: {
+                                   show: true,
+                                   scaleSize: 1,
+                                   period: 30,
+                                   color: '#fff',
+                                   shadowBlur: 10
+                               },
+                               itemStyle: {
+                                   normal: {
+                                       borderWidth: 1,
+                                       lineStyle: {
+                                           type: 'solid',
+                                           shadowBlur: 10
+                                       }
+                                   }
+                               },
+                               data:testData7_1
+                           },
+                           markPoint: {
+                               symbol: 'emptyCircle',
+                               symbolSize: function (v) {
+                                   return 10 + v / 10
+                               },
+                               effect: {
+                                   show: true,
+                                   shadowBlur: 0
+                               },
+                               itemStyle: {
+                                   normal: {
+                                       label: {show: false}
+                                   }
+                               },
+                               data:testData7_2
+                           }
+                    },
+                    {
+                                            name: 'Monitor-IRELAND2',
+                                            type: 'map',
+                                            mapType: 'none',
+                                            data: [],
+                                            markLine: {
+                                                smooth: true,
+                                                effect: {
+                                                    show: true,
+                                                    scaleSize: 1,
+                                                    period: 30,
+                                                    color: '#fff',
+                                                    shadowBlur: 10
+                                                },
+                                                itemStyle: {
+                                                    normal: {
+                                                        borderWidth: 1,
+                                                        lineStyle: {
+                                                            type: 'solid',
+                                                            shadowBlur: 10
+                                                        }
+                                                    }
+                                                },
+                                                data:monitorDataLine[8]
+                                            },
+                                            markPoint: {
+                                                symbol: 'emptyCircle',
+                                                symbolSize: function (v) {
+                                                    return 10 + v / 10
+                                                },
+                                                effect: {
+                                                    show: true,
+                                                    shadowBlur: 0
+                                                },
+                                                itemStyle: {
+                                                    normal: {
+                                                        label: {show: false}
+                                                    }
+                                                },
+                                                data:monitorDataPoint[8]
+                                            }
+                                        },
+                    {
+                                                                name: 'Monitor-NETHERLANDS2',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[9]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[9]
+                                                                }
+                                                            },
+                    {
+                                                                name: 'Monitor-US.CALIFORNIA2',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[10]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[10]
+                                                                }
+                                                            },
+                      {
+                                                                name: 'Monitor-HONGKONG2',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[11]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[11]
+                                                                }
+                                                            },
+                      {
+                                                                name: 'Monitor-US.VIRGINIA3',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[12]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[12]
+                                                                }
+                                                            },
+                     {
+                                                                name: 'Monitor-IRELAND3',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[14]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[14]
+                                                                }
+                                                            },
+                      {
+                                                                name: 'Monitor-CHINA',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[16]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[16]
+                                                                }
+                                                            },
+                     {
+                                                                name: 'Monitor-IRELAND4',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[17]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[17]
+                                                                }
+                                                            },
+                     {
+                                                                name: 'Monitor_US.WASHINGTON',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[18]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[18]
+                                                                }
+                                                            },
+                     {
+                                                                name: 'Monitor_US.ILLINOIS',
+                                                                type: 'map',
+                                                                mapType: 'none',
+                                                                data: [],
+                                                                markLine: {
+                                                                    smooth: true,
+                                                                    effect: {
+                                                                        show: true,
+                                                                        scaleSize: 1,
+                                                                        period: 30,
+                                                                        color: '#fff',
+                                                                        shadowBlur: 10
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            borderWidth: 1,
+                                                                            lineStyle: {
+                                                                                type: 'solid',
+                                                                                shadowBlur: 10
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataLine[19]
+                                                                },
+                                                                markPoint: {
+                                                                    symbol: 'emptyCircle',
+                                                                    symbolSize: function (v) {
+                                                                        return 10 + v / 10
+                                                                    },
+                                                                    effect: {
+                                                                        show: true,
+                                                                        shadowBlur: 0
+                                                                    },
+                                                                    itemStyle: {
+                                                                        normal: {
+                                                                            label: {show: false}
+                                                                        }
+                                                                    },
+                                                                    data:monitorDataPoint[19]
+                                                                }
+                                                            },
                     {
                         name: 'Service-Europe',
                         type: 'map',
@@ -1189,26 +1681,10 @@
                                     }
                                 }
                             },
-//                            data:countryData2[3]
+
                                data:countryData2[2]
                         }
-//                        markPoint: {
-//                            symbol: 'emptyCircle',
-//                            symbolSize: function (v) {
-//                                return 10 + v / 10
-//                            },
-//                            effect: {
-//                                show: true,
-//                                shadowBlur: 0
-//                            },
-//                            itemStyle: {
-//                                normal: {
-//                                    label: {show: false}
-//                                }
-//                            },
-////                            data: countryData1[3]
-//                              data:testData1_2
-//                        }
+
                     },
                     {
                         name: 'Service-NorthAmerica',
@@ -1235,22 +1711,7 @@
                             },
                             data:countryData2[3]
                         }
-//                        markPoint: {
-//                            symbol: 'emptyCircle',
-//                            symbolSize: function (v) {
-//                                return 10 + v / 10
-//                            },
-//                            effect: {
-//                                show: true,
-//                                shadowBlur: 0
-//                            },
-//                            itemStyle: {
-//                                normal: {
-//                                    label: {show: false}
-//                                }
-//                            },
-//                            data: countryData1[4]
-//                        }
+
                     },
                     {
                         name: 'Service-Oceania',
@@ -1277,22 +1738,7 @@
                             },
                             data:countryData2[4]
                         }
-//                        markPoint: {
-//                            symbol: 'emptyCircle',
-//                            symbolSize: function (v) {
-//                                return 10 + v / 10
-//                            },
-//                            effect: {
-//                                show: true,
-//                                shadowBlur: 0
-//                            },
-//                            itemStyle: {
-//                                normal: {
-//                                    label: {show: false}
-//                                }
-//                            },
-//                            data: countryData1[5]
-//                       }
+
                     },
                     {
                         name: 'Service-SouthAmerica',
