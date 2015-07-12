@@ -208,6 +208,7 @@
                     'Monitor-IRELAND4',
                     'Monitor_US.WASHINGTON',
                     'Monitor_US.ILLINOIS',
+                    ' ',
                     'Service-Europe',
                     'Service-NorthAmerica',
                     'Service-Oceania',
@@ -232,6 +233,7 @@
                         'Monitor-IRELAND4': false,
                         'Monitor_US.WASHINGTON': false,
                         'Monitor_US.ILLINOIS': false,
+                        ' ':false,
                         'Service-Europe':false,
                         'Service-NorthAmerica':false,
                         'Service-Oceania':false,
@@ -1658,6 +1660,49 @@
                                                                     data:monitorDataPoint[19]
                                                                 }
                                                             },
+                     {
+                        name: ' ',
+                        type: 'map',
+                        mapType: 'none',
+                        data: [],
+                        markLine: {
+                            smooth: true,
+                            effect: {
+                                show: true,
+                                scaleSize: 1,
+                                period: 30,
+                                color: '#fff',
+                                shadowBlur: 10
+                            },
+                            itemStyle: {
+                                normal: {
+                                    borderWidth: 1,
+                                    lineStyle: {
+                                        type: 'solid',
+                                        shadowBlur: 10
+                                    }
+                                }
+                            },
+                            data: []
+                        },
+                        markPoint: {
+                            symbol: 'emptyCircle',
+                            symbolSize: function (v) {
+                                return 10 + v / 10
+                            },
+                            effect: {
+                                show: true,
+                                shadowBlur: 0
+                            },
+                            itemStyle: {
+                                normal: {
+                                    label: {show: false}
+                                }
+                            },
+
+                            data: []
+                        }
+                    },
                     {
                         name: 'Service-Europe',
                         type: 'map',
